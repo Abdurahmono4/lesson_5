@@ -33,6 +33,7 @@ a {
   margin-bottom: 0.5em;
 }
 link {
+  display: flex;
   gap: 30px;
 }
 .navbar {
@@ -47,4 +48,9 @@ link {
     justify-content: space-between;
     width: 100%;
   }
+}
+
+.navbar link {
+  display: flex;
+  gap: 50px;
 }
