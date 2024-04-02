@@ -50,7 +50,7 @@ link {
   }
 }
 
-.navbar link {
+.navbar .link {
   display: flex;
   gap: 50px;
 }
