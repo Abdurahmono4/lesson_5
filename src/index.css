@@ -5,11 +5,22 @@
 }
 a {
   text-decoration: none;
-  color: blue;
+  color: rgb(255, 251, 0);
+}
+body {
+  background: url("./images/pexels-pixabay-459403.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .container {
+  color: #ffffff;
   width: 100%;
-  max-width: 900px;
+  width: 900px;
+  max-width: 1000px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
@@ -17,6 +28,7 @@ a {
   align-items: center;
   justify-content: space-between;
   display: flex;
+  text-align: justify;
 
   /* display: flex;
   flex-direction: column;
@@ -27,11 +39,15 @@ a {
   margin: 0 auto;
   padding: 0 1.2em; */
 }
-.title {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
+.subtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.4em;
 }
+/* .subtitle::first-line {
+  color: #ffffff;
+  background-color: chartreuse;
+} */
 link {
   display: flex;
   gap: 30px;
@@ -40,6 +56,7 @@ link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 
   nav {
     display: flex;
@@ -49,8 +66,173 @@ link {
     width: 100%;
   }
 }
+.link {
+  padding: 8px;
+  border-radius: 12px;
+  background-color: rgb(7, 7, 29, 0.4);
+}
+.link:hover {
+  transform: scale(1.1);
+  background-color: rgb(60, 199, 167);
+  color: aliceblue;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-.navbar .link {
+.link:active {
+  background-color: rgb(60, 199, 167);
+  color: aliceblue;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoBtn {
+  margin-top: 120px;
+  border-radius: 12px;
+  background-color: rgb(7, 7, 29);
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  gap: 50px;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.InfoBtn:hover {
+  transform: scale(1.1);
+  background-color: rgb(60, 199, 167);
+  color: aliceblue;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.author {
+  display: flex;
+  gap: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.home-container {
+  padding: 0;
+}
+
+.item {
+  padding: 8px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 20px; */
+  /* padding: 10px; */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  background-color: rgb(60, 199, 167);
+  color: aliceblue;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cards {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  /* max-width: 900px; */
+  padding: 0;
+}
+
+.item img {
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.item__info {
+  padding: 5px;
+  color: black;
+}
+.item__info::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  font: size 2px;
+  color: rgb(165, 121, 121);
+}
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.dropdown-menu span {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PAGE NOT FOUND */
+
+.pageNotFound-container {
+  text-align: center;
+}
+
+.pageNotFound-container p {
+  text-align: justify;
+}
+
+.pageNotFound-container a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 8px;
+  border: 2px solid #333;
+  background-color: #fff;
+}
+
+.pageNotFound-container a:hover {
+  background: #333;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+/* For desktops */
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+/* For large desktops */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }

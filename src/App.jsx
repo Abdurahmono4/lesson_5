@@ -7,6 +7,7 @@ import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,6 +23,11 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+
+        {
+          path: "*",
+          element: <PageNotFound />,
         },
       ],
     },
